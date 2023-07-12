@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #424B54;
+}
+
+/* calculator */
+
+#calculator { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #D88C9A;
+    border: 2px solid #000000;
+    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* display */
+
+#display {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+    font-size: 40px;
+    margin: 20px;
+    background-color: #F1E3D3;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 13px 20px;
+}
+
+#operation {
+    font-size: 25px;
+    min-height: 30px;
+}
+
+/* "Clear" and "Delete" buttons */
+
+#modification {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+#modification button {
+    width: 175px;
+    height: 60px;
+}
+
+/* buttons */
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    padding: 20px;
+}
+
+#container button {
+    height: 60px;
+}
+
+#modification button,
+#container button {
+    border: 2px solid #000000;
+    background-color: #99C1B9;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px #AB6370;
+}
+
+#modification button:active,
+#container button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+
+#container .numbers {
+    background-color: #F2D0A9;
+}
+
+/* footer */
+
+#footer {
+    color: #f9faf8;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img {
+    width: 30px;
+    height: auto;
+}
+
+#footer img:hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 420px) {
+    #modification button {
+        width: 120px;
+        height: 55px;
+    }
+
+    #container button {
+        height: 55px;
+        width: 55px;
+    }
+}
