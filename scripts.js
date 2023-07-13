@@ -41,7 +41,7 @@ function operate(firstNumber, currentOperator, secondNumber) {
 
 function evaluate() {
     if (currentOperator === null || shouldResetDisplay) return;
-    if (currentOperator === "÷" && resultDisplay.textContent === "0") return; // calculator doesn't allow to divide by 0
+    if (currentOperator === "÷" && Number(resultDisplay.textContent) === 0) return; // calculator doesn't allow to divide by 0
     secondNumber = resultDisplay.textContent;
     resultDisplay.textContent = roundResult(operate(firstNumber, currentOperator, secondNumber));
     operationDisplay.textContent = `${firstNumber} ${currentOperator} ${secondNumber}`;
