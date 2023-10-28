@@ -1,3 +1,3 @@
-The Odin Project: Calculator
+# Calculator
 
 [View the site](https://andziuba.github.io/calculator/)
